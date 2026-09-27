@@ -11,13 +11,13 @@ import datetime
 
 def analyze_signals() -> dict:
     return {
-        "status": "NOMINAL",
+        "status": "TEMPLATE_EXAMPLE — no live feed",
         "last_scan": datetime.datetime.utcnow().isoformat() + "Z",
         "signals_parsed": 0, "_veritas": "0 = measured. No live CDC feed connected yet",
         "anomalies_detected": 0,
         "threat_basis": "NO_DATA — template only",
-        "threat_level": "GREEN",
-        "action_required": "Continue passive ingestion of regional CDC RSS feeds."
+        "threat_level": "NO_DATA — template only",
+        "action_required": "Wire a real CDC/WHO feed before any operational claim."
     }
 
 if __name__ == "__main__":
